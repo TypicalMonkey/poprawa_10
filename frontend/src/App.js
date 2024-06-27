@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/')
+    fetch('https://poprawa10.azurewebsites.net/')
       .then(response => response.text())
       .then(data => setMessage(data))
       .catch(error => console.error('Błąd podczas pobierania danych:', error));
